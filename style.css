@@ -639,3 +639,88 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     font-weight: 600;
 }
+
+/* --- --- --- GESCHICHTE / TIMELINE --- --- --- */
+
+.history-wrapper {
+    padding: 80px 60px;
+}
+
+/* Alles zentriert in max. 1000px */
+.history-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Vertikale Linie */
+.history-timeline::before {
+    content: "";
+    position: absolute;
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #333;
+}
+
+/* Einzelnes Timeline-Element */
+.history-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* Punkt auf der Linie */
+.history-marker {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #0b0b0b;
+    border: 3px solid #c8102e;
+    transform: translate(-50%, 0);
+}
+
+/* Inhalt: Text links, Bild rechts – alles innerhalb der 1000px */
+.history-item-inner {
+    margin-left: 80px;          /* Platz für Linie + Punkt */
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Textbox-Styling wie deine anderen Karten */
+.history-text {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-left: 4px solid #c8102e;
+    border-radius: 14px;
+    padding: 20px 24px;
+}
+
+.history-text h2 {
+    margin: 0 0 8px;
+    font-size: 1.4rem;
+}
+
+.history-text p {
+    margin: 0;
+    line-height: 1.7;
+    color: #dddddd;
+}
+
+/* Bild rechts neben dem Text */
+.history-image {
+    flex-shrink: 0;
+    width: 220px;                /* kannst du anpassen */
+}
+
+.history-image img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+}
