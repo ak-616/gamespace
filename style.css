@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background: #0b0b0b;
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Saira", sans-serif;
+	font-weight: 750;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+/* HEADER */
+
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    position: relative;
+    color: #cccccc;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.1rem;
+    padding-bottom: 0.5px;
+	text-shadow: 0 8px 10px rgba(0,0,0,0);
+}
+
+/* ::AFTER RED BAR */
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    height: 2.4px;
+    width: 0;
+    background: #c8102e;
+    transform: translateX(-50%);
+    transition: width 0.2s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;              
+}
+
+/* LOGO */
+
+.logo img {
+    height: 60px;
+	margin-top: 10px;
+}
+
+/* HERO */
+
+.hero {
+    height: 100vh;
+	max-height: 140%;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 120px 150px 80px 60px;
+	justify-content: flex-start;
+}
+
+/* INDIVIDUAL HERO BACKGROUNDS */
+
+.hero-start {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)),
+        url("assets/img/background/background_1.jpg");
+}
+
+.hero-games {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)),
+        url("assets/img/background/background_2.jpg");
+}
+
+.hero-geschichte {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)),
+        url("assets/img/background/background_3.jpg");
+}
+
+.hero-galerie {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)),
+        url("assets/img/background/background_4.jpg");
+}
+
+.hero-ueber {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)),
+        url("assets/img/background/background_5.jpg");
+}
+
+/* TITLE */
+
+.hero-title-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 15% 20px 30px;
+    border-radius: 8px;
+}
+
+.hero-title-box h1 {
+    margin: 0 0 10px;
+    font-size: 2.2rem;
+	text-transform: uppercase;
+}
+
+.hero-title-box p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #dddddd;
+}
+
+/* FOOTER */
+
+.site-footer {
+    background: #080808;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 30px 60px;
+    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    line-height: 1.6;
+}
+
+.footer-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #c8102e;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+/* --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
+
+/* START PAGE TEXT SECTION */
+
+.start-content {
+    background: #0b0b0b;
+    padding: 80px 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.start-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-left: 6px solid #c8102e;  
+    padding: 40px 50px;
+    border-radius: 12px;
+    max-width: 1000px;
+    width: 100%;
+	position: relative;
+	margin: 0 auto 0 auto;
+}
+
+.start-box::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+	max-width: 1200px;
+    width: 120%;
+    height: 2px;
+    background: #c8102e;
+	
+	background: linear-gradient(
+        to right,
+        transparent,
+        #c8102e,
+        transparent
+    );
+}
+
+.start-box h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.start-box p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #dddddd;
+}
+
+/* START PAGE LINK GRID */
+
+.start-links {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+	margin-bottom: -30px;
+}
+
+
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+	height: 600px;
+    width: 100%;
+}
+
+
+.link-card {
+    display: flex;
+	flex-direction: row-reverse;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+	border-left: 3px solid #c8102e;
+}
+
+.link-card:hover {
+    transform: translateY(-4px);
+}
+
+.link-card img {
+    width: 52%;
+    height: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.link-content {
+	flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.link-content h3 {
+    margin: 0 0 15px;
+    font-size: 1.6rem;
+}
+
+/* BUTTON */
+
+.link-btn {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #c8102e;
+    padding: 8px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.25s ease;
+}
+
+.link-btn:hover {
+    background: #c8102e;
+    color: #ffffff;
+}
+
+/* --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
+
+/* GAMES SECTION */
+
+.games-section {
+    padding: 60px 60px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Gesamte Karte */
+
+.game-card {
+    background: #111111;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+	border-left: 3px solid #c8102e;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/* Checkbox verstecken */
+.game-toggle {
+    display: none;
+}
+
+/* OBERER TEIL */
+
+.game-card-main {
+    display: flex;
+    gap: 30px;
+    padding: 30px 40px;
+    align-items: center;
+}
+
+.game-cover-wrap {
+    flex-shrink: 0;
+}
+
+.game-cover {
+    width: 180px;
+    aspect-ratio: 3 / 4;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+.game-main-text h2 {
+    margin: 0 0 12px;
+    font-size: 1.9rem;
+}
+
+.game-relation {
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+.game-short {
+    margin: 0 0 20px;
+    color: #dddddd;
+}
+
+/* Mehr-anzeigen Button */
+
+.game-more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 22px;
+    border-radius: 999px;
+    border: 2px solid #c8102e;
+    cursor: pointer;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    background: transparent;
+    color: #ffffff;
+    transition: all 0.25s ease;
+}
+
+/* Standard-Text */
+.game-more-btn::before {
+    content: "Mehr anzeigen";
+}
+
+/* Hover */
+.game-more-btn:hover {
+    background: #c8102e;
+}
+
+/* Wenn Checkbox angehakt → Text ändern + Style anpassen */
+
+.game-toggle:checked ~ .game-card-main .game-more-btn {
+    background: #c8102e;
+    box-shadow: 0 0 12px rgba(200, 16, 46, 0.5);
+}
+
+.game-toggle:checked ~ .game-card-main .game-more-btn::before {
+    content: "Weniger anzeigen";
+}
+
+/* UNTERER TEIL (Dropdown) */
+
+.game-card-extra {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.35s ease;
+}
+
+/* Inhalt im unteren Bereich */
+
+.game-extra-inner {
+    padding: 24px 40px 32px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 24px;
+}
+
+.game-details h3,
+.game-trailer h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.game-details table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.game-details th,
+.game-details td {
+    padding: 6px 0;
+    text-align: left;
+}
+
+.game-details th {
+    color: #bbbbbb;
+    width: 35%;
+}
+
+/* Trailer */
+
+.video-placeholder {
+    display: block;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-placeholder img {
+    width: 100%;
+    display: block;
+}
+
+.video-placeholder span {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Toggle-Logik: wenn Checkbox angehakt → unteren Teil anzeigen */
+
+.game-toggle:checked ~ .game-card-extra {
+    max-height: 600px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
+
+/* GALERIE */
+
+.gallery-wrapper {
+    padding: 60px 60px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Ganze Game-Karte (volle Breite, aber zentriert) */
+.gallery-game-card {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 24px 26px 26px;
+    border-left: 3px solid #c8102e;
+    box-sizing: border-box;
+}
+
+/* Header über den Bildern */
+.gallery-game-header h2 {
+    margin: 0 0 6px;
+    font-size: 1.8rem;
+}
+
+.gallery-game-header p {
+    margin: 0 0 18px;
+    font-size: 0.95rem;
+    color: #cccccc;
+}
+
+/* Grid mit ca. 15 Bildern */
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+/* Quadratische Thumbnails */
+.gallery-images img {
+    width: 100%;
+    aspect-ratio: 1 / 1;      /* macht sie quadratisch */
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* kleiner Hover-Effekt */
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+
+/* --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
+
+/* ÜBER */
+
+
+.about-section {
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Steckbrief Card */
+
+.about-card {
+    display: flex;
+    justify-content: space-between;
+    background: #111;
+    border-radius: 24px;
+    padding: 40px;
+    border-left: 4px solid #c8102e;
+    gap: -20px;
+}
+
+/* Infos */
+
+.about-info table {
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.about-info th {
+    text-align: left;
+    padding-right: 30px;
+    color: #aaa;
+}
+
+.about-info td {
+    color: #fff;
+	padding-left: 20px;
+	padding-right: -20px;
+}
+
+.about-info th {
+    padding: 4px 40px 4px 0;
+    text-align: left;
+    color: #aaa;
+}
+
+.about-info td {
+    padding: 4px 0;
+    color: #fff;
+}
+
+/* Portrait */
+
+.about-portrait img {
+    width: 180px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* Kontaktbox */
+
+.contact-card {
+    background: #111;
+    border-radius: 24px;
+    padding: 40px;
+    border-left: 4px solid #c8102e;
+}
+
+/* Formular */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: #1a1a1a;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 10px;
+}
+
+.contact-btn {
+    background: #c8102e;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+}
