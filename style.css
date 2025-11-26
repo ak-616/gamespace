@@ -477,7 +477,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-/* Toggle-Logik: wenn Checkbox angehakt → unteren Teil anzeigen */
+/* Toggle-Logik */
 
 .game-toggle:checked ~ .game-card-extra {
     max-height: 600px;
@@ -644,9 +644,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .history-wrapper {
     padding: 80px 60px;
+	margin-bottom: -120px;
 }
 
-/* Alles zentriert in max. 1000px */
 .history-timeline {
     position: relative;
     max-width: 1000px;
@@ -670,7 +670,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 50px;
 }
 
-/* Punkt auf der Linie */
+/* Punkt */
 .history-marker {
     position: absolute;
     left: 40px;
@@ -683,15 +683,15 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(-50%, 0);
 }
 
-/* Inhalt: Text links, Bild rechts – alles innerhalb der 1000px */
+/* Inhalt: Text links, Bild rechts */
 .history-item-inner {
-    margin-left: 80px;          /* Platz für Linie + Punkt */
+    margin-left: 80px;
     display: flex;
     gap: 30px;
     align-items: flex-start;
 }
 
-/* Textbox-Styling wie deine anderen Karten */
+/* Textbox-Styling */
 .history-text {
     flex: 1;
     background: rgba(255, 255, 255, 0.03);
@@ -712,10 +712,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #dddddd;
 }
 
-/* Bild rechts neben dem Text */
 .history-image {
     flex-shrink: 0;
-    width: 220px;                /* kannst du anpassen */
+    width: 220px;
 }
 
 .history-image img {
